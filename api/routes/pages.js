@@ -131,7 +131,6 @@ router.post('/', (req, res)=>{
 
 // update Active state//
 router.put('/:pageId/:active', (req, res) => {
-    console.log(res , "res")
     let { isValid, errors} = validator(req.body);
     console.log(isValid, errors)
     
